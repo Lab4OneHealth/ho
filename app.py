@@ -62,14 +62,14 @@ department_mapping = {
 
 # ---------------- Month Window -> model & shap background file mapping ----------------
 window_to_model = {
-    "Jan-Mar": "best_model_1_3月_LinearRegression.joblib",
-    "Jan-Jun": "best_model_1_6月_LinearRegression.joblib",
-    "Jan-Sep": "best_model_1_9月_LinearRegression.joblib",
+    "Jan-Mar": "best_model_1_3_LinearRegression.joblib",
+    "Jan-Jun": "best_model_1_6_LinearRegression.joblib",
+    "Jan-Sep": "best_model_1_9_LinearRegression.joblib",
 }
 window_to_shap_bg = {
-    "Jan-Mar": "shap_background_1_3月.csv",
-    "Jan-Jun": "shap_background_1_6月.csv",
-    "Jan-Sep": "shap_background_1_9月.csv",
+    "Jan-Mar": "shap_background_1_3.csv",
+    "Jan-Jun": "shap_background_1_6.csv",
+    "Jan-Sep": "shap_background_1_9.csv",
 }
 
 # ---------------- Load Quartile Thresholds ----------------
@@ -226,5 +226,5 @@ if st.button("🚀 Predict Performance"):
             st.info(" ")
 
     except Exception as e:
-        st.error(f"❌ Prediction or SHAP analysis failed: {e}")
+        st.error(f" {e}")
 
